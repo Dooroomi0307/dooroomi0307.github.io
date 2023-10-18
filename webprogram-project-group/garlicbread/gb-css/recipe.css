@@ -1,0 +1,288 @@
+*{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/*General recipe layout*/
+body{
+  display:flex;
+  flex-direction:row;
+  padding:20px;
+}
+
+h1{
+  font-size:25px;
+}
+
+/*main-container*/
+.main{
+  width: 100%;
+  height: 100%;
+  display:flex;
+  flex-direction: row;
+  margin-left:30px;
+}
+
+/*Container (.img-display, description)*/
+.container{
+  display:flex;
+  flex-direction:row;
+  width:98%;
+  height:100%;
+}
+
+/*Container for animation*/
+.img-display{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-top:20px;
+}
+
+
+/*Description text box*/
+.description{
+  position:absolute;
+  left:1150px;
+  width:350px;
+  height:710px;
+  background-color:rgb(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding:20px;
+  padding-left:30px;
+  margin-left:30px;
+}
+
+.ingredients{
+  display:flex;
+  flex-direction:column;
+  width:500px;
+  padding:20px;
+  margin-left:60px;
+  margin-top:10px;
+}
+
+
+.recipe{
+  padding:10px;
+  font-size:25px;
+}
+
+
+
+.r-1,.r-2,.r-3{
+  display:flex;
+  flex-direction:row;
+  padding:10px;
+  margin-bottom: 20px;
+}
+
+.img-holder{
+  display: flex;
+  flex-direction: column;
+  margin:10px;
+  text-align: center;
+  margin-right:80px;
+}
+
+.i-img{
+  height:130px;
+  transition: transform .2s;
+}
+
+.i-img:hover{
+  transform: scale(1.2);
+  border-color: azure;
+}
+
+.i-label{
+  font-size:20px;
+  margin-top:5px;
+}
+
+.ingredients-prep{
+  display:flex;
+  flex-direction: column;
+  margin-left:50px;
+  margin-top:100px;
+}
+
+.img-upper{
+  display:flex;
+}
+
+.img-lower{
+  display:flex;
+  flex-direction: row;
+}
+
+#s-1-img-layout{
+  display:flex;
+  flex-direction:row;
+}
+
+/*Images*/
+#background{
+  position:absolute;
+  filter:blur(4px);
+  margin:5px;
+  overflow: hidden;
+}
+
+#c-board{
+  position:absolute;
+  width:500px;
+  margin:auto;
+}
+
+#red-onion{
+  position:absolute;
+  width:200px;
+  margin-top:300px;
+  margin-left:50px;
+}
+
+#garlic{
+  position:absolute;
+  width:200px;
+  margin-top:300px;
+  margin-left:230px;
+}
+
+#pan{
+  position:absolute;
+  width:250px;
+  margin-top: 200px;
+  margin-left: 75px;
+  opacity:0;
+  transition: opacity 0.3S ease;
+}
+
+#pan-w-ws{
+  position:absolute;
+  width: 200px;
+  margin-top: 200px;
+  margin-left: 75px;
+  opacity:0;
+  transition: opacity 0.3S ease;
+}
+
+#onion-garlic{
+  position:absolute;
+  width:150px;
+  margin-left:90px;
+  margin-top:60px;
+  opacity:0;
+  transition: opacity 0.3S ease;
+}
+
+
+/*Animation*/
+
+#action-button{
+  color:rgb(160, 89, 24);
+  display: inline-block;
+  padding: 8px 8px;
+  background-color: #cac0bb;
+  border-radius:10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#action-button:hover{
+  background-color: rgb(141, 128, 112);
+}
+
+#onion-garlic-container:target #onion-garlic{
+  opacity:1;
+}
+
+
+#pan-container:target #pan{
+  opacity:1;
+}
+
+#pan-stir-container:target #pan-w-ws{
+  opacity:1;
+}
+
+/*Images*/
+
+#ynbm{
+  position:absolute;
+  width:150px;
+  margin-top: 150px;
+  margin-left: 75px;
+  opacity:0;
+  transition: opacity 0.3S ease;
+}
+
+#ynbmf{
+  position:absolute;
+  width: 150px;
+  margin-top: 150px;
+  margin-left: 125px;
+  opacity:0;
+  transition: opacity 0.3S ease;
+}
+
+#ynb{
+  position:absolute;
+  width:150px;
+  margin-left:200px;
+  margin-top: 75px;
+  opacity:0;
+  transition: opacity 0.3S ease;
+}
+
+#ynb-container:target #ynb{
+  opacity:1;
+}
+
+
+#ynbm-container:target #ynbm{
+  opacity:1;
+}
+
+#ynbmf-container:target #ynbmf{
+  opacity:1;
+}
+
+
+#yns{
+  position:absolute;
+  width:250px;
+  margin-top: 200px;
+  margin-left: 75px;
+  opacity:0;
+  transition: opacity 0.3S ease;
+}
+
+#yeast{
+  position:absolute;
+  width: 200px;
+  margin-top: 200px;
+  margin-left: 75px;
+  opacity:0;
+  transition: opacity 0.3S ease;
+}
+
+#water{
+  position:absolute;
+  width:150px;
+  margin-left:90px;
+  margin-top:60px;
+  opacity:0;
+  transition: opacity 0.3S ease;
+}
+#water-container:target #water{
+  opacity:1;
+}
+
+
+#yns-container:target #yns{
+  opacity:1;
+}
+
+#yeast-container:target #yeast{
+  opacity:1;
+}

@@ -1,0 +1,149 @@
+*{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body{
+  display:flex;
+  flex-direction:row;
+  padding:20px;
+  height:100%;
+  width: 100%;
+  overflow:hidden;
+}
+h1{
+  font-size:25px;
+}
+/*main-container*/
+.main{
+  width: 100%;
+  height: 100%;
+  display:flex;
+  flex-direction: row;
+  background-color: rgb(150, 121, 107);
+}
+
+/*Container (.img-display, description)*/
+.container{
+  display:flex;
+  flex-direction:row;
+  width:98%;
+  height:100%;
+}
+
+/*Container for animation*/
+.img-display{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+.recipe{
+  padding:10px;
+  font-size:25px;
+}
+/*Description text box*/
+.description{
+  background-color:rgb(255, 255, 255, 0.8);
+  position: absolute;
+  left:1150px;
+  width:350px;
+  height:710px;
+  border-radius: 10px;
+  padding:20px;
+  padding-left:30px;
+  margin-left:30px;
+}
+/*Background img*/
+#background{
+  filter:blur(4px);
+  margin:5px;
+  overflow: hidden;
+}
+#loaf{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	display: block;
+	margin:auto;
+	bottom: 1px;
+	left: 0;
+	right: 0;
+	opacity:0;
+}
+#rise{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	display: block;
+	margin:auto;
+	left:1px;
+	top:0.40;
+	opacity:0;
+}
+#dough{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	display: block;
+	bottom:0.75px;
+	margin:auto;
+	opacity: 0;
+}
+#topping{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	display: block;
+	margin:auto;
+	bottom:2.5px;
+	right:1px;
+}
+/*loaf container w target #loaf for action-bttn*/
+#loaf-container:target #loaf{
+	opacity:1;
+	animation: loaf 6s linear 1;
+}
+@keyframes loaf{
+	0%{transform: scaleX(0);}
+	50%{transform: scaleX(0.5);}
+	100%{transform: scaleX(1);}
+}
+#dough-container:target #dough{
+	opacity:1;
+	animation: dough 6s linear 1;
+}
+/*keyframe animation for shrinking dough*/
+@keyframes dough{
+	0%{transform: scale(1);}
+	50%{transform: scale(0.5);}
+	100%{transform: scale(0);}
+}
+/*keyframe animation for rising loaf*/
+#rise-container:target #rise{
+	opacity:1;
+	animation: rise 6s linear 1;	
+}
+@keyframes rise{
+	0%{transform: scale(1);}
+	50%{transform: scale(1.1);}
+	100%{transform: scale(1.2);}
+}
+#c-board{
+  width:1000px;
+  height:800px;
+  background-image: url(../gb-img/c-board.png);
+  background-position: center;
+  background-size: cover; 
+  margin-left:20px;
+  position: relative;
+}
+#action-bttn{
+  color:rgb(160, 89, 24);
+  display: inline-block;
+  padding: 8px 8px;
+  background-color: #cac0bb;
+  border-radius:10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#action-bttn:hover{
+  background-color: rgb(141, 128, 112);
+}
