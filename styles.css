@@ -1,0 +1,159 @@
+*{
+  font-family: sans-serif;
+}
+
+body{
+  background-color: rgb(64, 112, 170); 
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left:5%;
+  margin-right:5%;
+  background-image:url('background.jpg');
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+}
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  align-items:left;
+  align-content:center;
+  justify-content: center;
+  margin-top:-50px;
+}
+
+.banner-title{
+  font-size:60px;
+  text-align: left;
+  color:rgb(24, 24, 24);
+}
+
+.web-dev{
+  color:rgb(246, 250, 255);
+}
+
+.gsu-link{
+  color:black;
+  text-align: left;
+  margin-top:-100px;
+  margin-bottom:40px;
+}
+
+.gsu-link:hover{
+  color:rgb(158, 172, 189);
+}
+
+.content-top{
+  display:flex;
+  flex-direction:row;
+  margin-top:10px;
+  margin-bottom:100px;
+}
+
+.profile-section{
+  display:flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  justify-content: center;
+  align-items:center;
+  align-content:center;
+  box-shadow:5px 5px 10px rgba(0, 0, 0, 0.3);
+  margin-right:20px;
+}
+
+.profile{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  align-content:center;
+}
+
+.profile-pic{
+  border-radius:100%;
+  width:180px;
+  margin-top:40px;
+}
+
+.quote{
+  color:rgb(119, 119, 119);
+  text-align:center;
+  font-style:italic;
+  line-height:1.5;
+  font-weight:normal;
+  margin-bottom:50px;
+}
+
+.quote-p{
+  text-align:right;
+}
+
+.bio{
+  line-height: 0.8;
+  margin-right:25px;
+  margin-left:25px;
+}
+
+.name{
+  text-align:center;
+}
+
+.college{
+  font-weight:bold;
+  color:red;
+}
+
+.major{
+  font-weight:bold;
+  color:red;
+  font-style: italic;
+}
+
+.job-description{
+  line-height:10px;
+  font-style: italic;
+  line-height:1.5;
+}
+
+.links{
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow:5px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.link-table{
+  text-align: center;
+  margin:40px;
+
+}
+
+th, td{
+  padding:5px;
+  text-decoration: none;
+}
+
+.tr1,.tr3,.tr5{
+  background-color: rgb(204, 204, 204);
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+a:hover{
+  color:rgb(136, 136, 136);
+}
+
+li{
+  font-size:15px;
+}
+
+.interest,.hobby{
+  font-weight:bold;
+  color:red;
+}
