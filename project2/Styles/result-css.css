@@ -1,0 +1,44 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url(../Resources/jeopardy_blue.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#result{
+   text-align: center;
+   margin-top: 80px;
+   font-size: 30px;
+   font-weight: bold;
+   background-color:#252cf0;
+   color: orange;
+   padding: 30px;
+}
+
+#return{
+    margin-top: 20px;
+    margin-left: 85%;
+    border: 2px solid black;
+    border-radius: 20px;
+    border-width: 2px;
+    width: 200px;
+    height: 40px;
+    background-color: #060CE9;
+    color: orange;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#return:hover{
+   background-color: navy;
+   transition: 0.7s;
+}
+
+#return:active{
+   background-color: #000;
+}
